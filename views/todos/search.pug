@@ -1,0 +1,11 @@
+h1 Todo List
+h3
+    a(href="/") Back home
+
+form(action="/todos/search" method="GET")
+    //- name="q" => Gắn giá trị nhập cho q    
+    input(type="text", value="" name="q")
+    button Search    
+ul    
+    each todo in todos
+        li=todo.job                                                                             
